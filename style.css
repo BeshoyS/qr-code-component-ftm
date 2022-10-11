@@ -1,0 +1,110 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+/* Global */
+:root {
+  --font-family: "Outfit", sans-serif;
+  --white: rgb(255, 255, 255);
+  --light-gray: rgb(214, 226, 240);
+  --grayish-blue: rgb(123, 135, 157);
+  --dark-blue: rgb(31, 50, 81);
+  --box-shadow: 0px 8px 14px rgba(0, 0, 0, 0.1);
+  --border-radius: 20px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--light-gray);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Card */
+main.card {
+  background-color: var(--white);
+  width: 18rem;
+  padding: 1rem;
+  text-align: center;
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+/* Image */
+.card img {
+  width: 100%;
+  border-radius: calc(var(--border-radius) / 2);
+  -webkit-border-radius: calc(var(--border-radius) / 2);
+  -moz-border-radius: calc(var(--border-radius) / 2);
+  -ms-border-radius: calc(var(--border-radius) / 2);
+  -o-border-radius: calc(var(--border-radius) / 2);
+}
+
+/* Content */
+.content {
+  margin: 1rem auto;
+  padding: 0 0.4rem;
+}
+
+/* Title */
+.title {
+  color: var(--dark-blue);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* Desc */
+.desc {
+  color: var(--grayish-blue);
+  font-size: 0.9rem;
+}
+
+/* Footer */
+.attribution {
+  color: var(--grayish-blue);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--dark-blue);
+  text-decoration: none;
+  font-weight: 700;
+  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+}
+
+.attribution a:hover {
+  opacity: 0.8;
+}
+
+/* Mobile Size */
+@media screen and (max-width: 375px) {
+  /* Card */ /* Footer */
+  main.card,
+  .attribution {
+    width: 90%;
+  }
+}
