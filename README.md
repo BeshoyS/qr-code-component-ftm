@@ -1,5 +1,7 @@
 # Frontend Mentor - QR code component
 
+### Live Demo: https://beshoys.github.io/qr-code-component-ftm/
+
 ![Design preview for the QR code component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
